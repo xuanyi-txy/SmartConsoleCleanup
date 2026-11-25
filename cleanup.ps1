@@ -239,10 +239,10 @@ foreach ($app in $apps) {
     $installLocation = Get-InstallFolder -AppName $appName -RegistryLocation $app.InstallLocation
 
     # ── Protected version guard ───────────────────────────────────────────────
-    if ($appName -match [regex]::Escape($ProtectedVersion)) {
-        Log ">>> Skipping $appName (protected)"
-        continue
-    }
+#    if ($appName -match [regex]::Escape($ProtectedVersion)) {
+#        Log ">>> Skipping $appName (protected)"
+#        continue
+#    }
 
     Log ">>> Processing: $appName"
     if ($installLocation) { Log "    Install folder: $installLocation" }
