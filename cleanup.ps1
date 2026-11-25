@@ -16,7 +16,7 @@ param(
     [switch]$NukeAll,
     [switch]$NukeOnly,   # Skip normal uninstallers entirely; go straight to nuke mode
     [switch]$DryRun,
-    [string]$ProtectedVersion = "R82"
+    [string]$ProtectedVersion = "R83"
 )
 
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
